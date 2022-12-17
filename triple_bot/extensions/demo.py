@@ -12,5 +12,7 @@ class DemoExtension(Extension):
         message = cast(Message, ctx.target)
         await ctx.send(f"{message.author.username} makes a good point in {len(message.content)} characters!")
 
+    
+
 def setup(client: Client):
     DemoExtension(client)
